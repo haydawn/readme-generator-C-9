@@ -4,9 +4,23 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
-inquirer
+const questions = [
+];
+
+
+
+
+// function to write README file
+function writeToFile(fileName, data) {
+}
+
+
+
+// function to initialize program
+function init(){
+    inquirer
     .prompt ([
-    {
+        {
         type: "input",
         name: "Title",
         message: "What is the title of your Project?"
@@ -58,19 +72,8 @@ inquirer
         name: "Questions",
         message: "What is your email address?"
     }
+
 ])
-console.log ("questions")
-
-
-
-
-// function to write README file
-function writeToFile(fileName, data) {
-}
-
-// function to initialize program
-function init() {
-
 }
 
 // function call to initialize program
