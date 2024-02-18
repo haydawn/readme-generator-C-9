@@ -19,7 +19,7 @@ inquirer
     {
         type: "input",
         name: "Table of Contents",
-        message: " "
+        message: "Please create a Table of Contents"
     },
     {
         type: "input",
@@ -58,7 +58,8 @@ inquirer
         name: "Questions",
         message: "What is your email address?"
     }
-]);
+])
+console.log ("questions")
 
 
 
