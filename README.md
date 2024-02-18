@@ -14,7 +14,7 @@ The following video demonstrates the application functionality:
 
 ## Screenshots
 
-![](assets/consolelogdemo.png)
+![](assets/demo1.png)
   
 
 
