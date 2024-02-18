@@ -58,7 +58,7 @@ inquirer
         name: "Questions",
         message: "What is your email address?"
     }
-])
+]);
 
 
 
