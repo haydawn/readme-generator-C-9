@@ -3,17 +3,19 @@ const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+const fileName = "README.md";
+
 // array of questions for user
 const questions = [
 ];
 
 
-
-
 // function to write README file
 function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+       console.log("Success")
+    });
 }
-
 
 
 // function to initialize program
@@ -38,7 +40,7 @@ function init(){
     {
         type: "input",
         name: "Installation",
-        message: "Please add all instructions for installation"
+        message: "Please add instructions for installation"
     },
     {
         type: "input",
@@ -74,7 +76,12 @@ function init(){
     }
 
 ])
+.then((answers) => {
+    console.log(answers);
+    writeToFile(fileName, (answers));
+});
 }
+
 
 // function call to initialize program
 init();
