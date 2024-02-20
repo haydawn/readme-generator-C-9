@@ -9,14 +9,6 @@ const questions = [
 ];
 
 
-// function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, () => {
-       console.log("Success")
-    });
-}
-
-
 // function to initialize program
 function init(){
     inquirer
@@ -28,8 +20,9 @@ function init(){
     },
     {
         type: "input",
-        message: "Please provide a description of your Project",
-        name: "Description"
+        name: "Description",
+        message: "Please provide a description of your Project"
+        
     },
     {
         type: "input",
@@ -75,10 +68,12 @@ function init(){
     }
 
 ])
+
+// function to write README file
 .then((answers) => {
     console.log(answers);
-    const README = `${answers.questions}`;
-    fs.writeFile('README.md' , answers, () => {
+    const README = `${answers.Title}\n:${answers.Description}\n:`
+    fs.writeFile('README.md' , README, () => {
         console.log("success");
     })
 });
