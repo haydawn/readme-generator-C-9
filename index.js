@@ -58,7 +58,7 @@ function init(){
     },
     {
         type: "input",
-        name: "GitHub Username",
+        name: "GitHubUsername",
         message: "What is your GitHub username?"
     },
     {
@@ -72,7 +72,17 @@ function init(){
 // function to write README file
 .then((answers) => {
     console.log(answers);
-    const README = `${answers.Title}\n:${answers.Description}\n:`
+    const README =  
+    `<div>${answers.Title}\n</div> 
+    <div>Description - ${answers.Description}\n</div> 
+    <div>Table of Contents - ${answers["Table of Contents"]}\n</div> 
+    <div>Installation - ${answers.Installation}\n</div>  
+    <div>Usage - ${answers.Usage}\n</div> 
+    <div>License - ${answers.License}\n </div> 
+    <div>Contributing - ${answers.Contributing}\n</div> 
+    <div> Tests - ${answers.Tests}\n</div>  
+    <div>GitHub Username - ${answers.GitHubUsername}\n</div>  
+    <div>Email - ${answers.Email}\n</div> `
     fs.writeFile('README.md' , README, () => {
         console.log("success");
     })
