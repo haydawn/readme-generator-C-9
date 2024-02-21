@@ -8,7 +8,8 @@
 </div>  
     <div>Usage - Resond to questions when prompted
 
-[![Demo](assets/thumbn.png)](assets/Demo.mp4)
+![Demo](assets/thumbn.png)
+[Click to watch Demo](assets/Demo.mp4)
 
 </div> 
     <div>License - MIT
