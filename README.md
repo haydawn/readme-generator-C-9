@@ -8,8 +8,12 @@
 </div>  
     <div>Usage - Resond to questions when prompted
 
-![Demo](assets/thumbn.png)
-[Click to watch Demo](assets/Demo.mp4)
+
+
+
+
+https://github.com/haydawn/readme-generator-C-9/assets/86681149/8fd9a922-eef7-454e-84de-2c32c37659ce
+
 
 </div> 
     <div>License - MIT
